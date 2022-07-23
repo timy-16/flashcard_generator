@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <section class="flashcard">
+      <div class="slideshow-container">
+        <button class="arrow-btn prev-btn" onclick="changeSlide(-1)">
+          <span class="left-arrow"><</span>
+        </button>
+        <div class="mySlides">
+          <img
+            src="https://images.unsplash.com/photo-1620325867502-221cfb5faa5f?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHxlbnwwfHwwfHw%3D&w=1000"
+            class="slide-img"
+            alt=""
+          />
+        </div>
+        <div class="mySlides">
+          <img
+            src="https://images.unsplash.com/photo-1572177812156-58036aae439c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvamVjdHxlbnwwfHwwfHw%3D&w=1000"
+            class="slide-img"
+            alt=""
+          />
+        </div>
+        <div class="mySlides">
+          <img
+            src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvamVjdHxlbnwwfHwwfHw%3D&w=1000"
+            class="slide-img"
+            alt=""
+          />
+        </div>
+        <div class="mySlides">
+          <img
+            src="https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cHJvamVjdHxlbnwwfHwwfHw%3D&w=1000"
+            class="slide-img"
+            alt=""
+          />
+        </div>
+        <div class="mySlides">
+          <img
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvamVjdHxlbnwwfHwwfHw%3D&w=1000"
+            class="slide-img"
+            alt=""
+          />
+        </div>
+        <div class="mySlides">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2plY3R8ZW58MHx8MHx8&w=1000"
+            class="slide-img"
+            alt=""
+          />
+        </div>
+        <div class="mySlides">
+          <img
+            src="https://images.unsplash.com/photo-1542621334-a254cf47733d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2plY3R8ZW58MHx8MHx8&w=1000"
+            class="slide-img"
+            alt=""
+          />
+        </div>
+        <div class="mySlides">
+          <img
+            src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2plY3R8ZW58MHx8MHx8&w=1000"
+            class="slide-img"
+            alt=""
+          />
+        </div>
+        <div class="mySlides">
+          <img
+            src="https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2plY3R8ZW58MHx8MHx8&w=1000"
+            class="slide-img"
+            alt=""
+          />
+        </div>
+        <div class="mySlides">
+          <img
+            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2plY3R8ZW58MHx8MHx8&w=1000"
+            class="slide-img"
+            alt=""
+          />
+        </div>
+        <button class="arrow-btn next-btn" onclick="changeSlide(1)">
+          <span class="right-arrow">></span>
+        </button>
+      </div>
+      <div class="container container-word">
+        <div class="upper-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/197/197484.png"
+            alt=""
+            class="icon"
+          />
+          <span class="icon-text">Word</span>
+        </div>
+        <div class="inside-container inside-container-word">
+          <span class="word"> project </span>
+          <button class="pronounce-btn" onclick="pronounce()">
+            <img
+              class="icon"
+              src="https://cdn-icons-png.flaticon.com/512/526/526510.png"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+      <div class="container container-definition">
+        <div class="upper-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5027/5027426.png"
+            alt=""
+            class="icon"
+          />
+          <span class="icon-text"> Definition</span>
+        </div>
+        <div class="inside-container inside-container-definition">
+          <ul class="definition-list">
+            - a planned piece of work that has a specific purpose (such as to
+            find information or to make something new) and that usually requires
+            a lot of time
+            <li class="definition-examples">an ambitious project</li>
+            <li class="definition-examples">a research/construction project</li>
+            <li class="definition-examples">
+              The repair turned out to be quite a project. [=it took a lot of
+              time and effort to do]
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="upper-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/888/888071.png"
+            alt=""
+            class="icon"
+          />
+          <span class="icon-text"> Synonyms</span>
+        </div>
+        <div class="inside-container inside-container-synonym">
+          <span class="synonym">scheme</span>
+          <span class="synonym">forecast</span>
+          <span class="synonym">stick out</span>
+          <span class="synonym">throw</span> <span class="synonym">convey</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="upper-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/323/323300.png"
+            alt=""
+            class="icon"
+          />
+          <span class="icon-text"> Translation</span>
+        </div>
+        <div class="inside-container inside-container-translation">
+          <span class="translation">проект</span>
+          <span class="translation">программа</span>
+          <span class="translation">осуществление</span>
+          <span class="translation">работа</span>
+          <span class="translation">объект</span>
+          <span class="translation">строительство</span>
+          <span class="translation">реализации</span>
+          <span class="more-translation"
+            ><span class="translation">план</span>
+            <span class="translation">проекта</span>
+            <span class="translation">проектный</span>
+            <span class="translation">проектной</span>
+            <span class="translation">строительный</span>
+            <span class="translation">проецировать</span>
+            <span class="translation">выступать</span>
+            <span class="translation">проектировать</span>
+            <span class="translation">спроектировать</span>
+            <span class="translation">продемонстрировать</span>
+            <span class="translation">спроецировать</span>
+            <span class="translation">представлять</span>
+            <span class="translation">демонстрировать</span>
+            <span class="translation">проектных</span>
+            <span class="translation">рамках</span>
+            <span class="translation">проэкт</span>
+            <span class="translation">прожект</span>
+            <span class="translation">наметить</span>
+            <span class="translation">Project</span></span
+          ><button class="more-translation-btn" onclick="showMore()">
+            Show More
+          </button>
+        </div>
+        <!-- <div class="inside-container inside-container-translation">
+          <h1 class="not-found-h1">Not Found!</h1>
+        </div> -->
+      </div>
+      <div class="container container-youtube">
+        <div class="upper-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+            alt=""
+            class="icon"
+          /><span class="icon-text"> YouTube</span>
+        </div>
+        <div class="inside-container youtube-videos">
+          <iframe
+            src="https://youtube.com/embed/YUOJFB6ZGQQ?start=55&end=71&cc_load_policy=1&cc_lang_pref=en&rel=0"
+            class="youtube-video"
+            title="Example From Youtube"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
+        <div class="btn-container example-btn-container">
+          <button class="prev-content-btn" onclick="changeYouTubeVideo(-1)">
+            <
+          </button>
+          <button class="next-content-btn" onclick="changeYouTubeVideo(1)">
+            >
+          </button>
+        </div>
+      </div>
+      <div class="container container-example-sentences">
+        <div class="upper-container">
+          <img
+            src="https://apprecs.org/ios/images/app-icons/256/7a/919979642.jpg"
+            alt=""
+            class="icon icon-context"
+          /><span class="icon-text">Reverso Context</span>
+        </div>
+        <div class="inside-container example-sentences">
+          <p class="context">
+            Me and Walter destroyed that <em>project</em>...
+          </p>
+          <p class="context">
+            Я и Уолтер уничтожили тот <em>проект</em>... они так и не сдались...
+          </p>
+        </div>
+        <div class="inside-container example-sentences">
+          <p class="context">
+            The Foundation demonstrated another special <em>project</em> Wonder
+            World.
+          </p>
+          <p class="context">
+            В фонде был также показан еще один специальный <em>проект</em> -
+            выставка «Wonder World.
+          </p>
+        </div>
+        <div class="inside-container example-sentences">
+          <p class="context">
+            Reforestation <em>project</em> and solar stoves <em>project</em> in
+            Argentina.
+          </p>
+          <p class="context">
+            <em>Проект</em> лесовосстановления и <em>проект</em> внедрения печей
+            на солнечной энергии в Аргентине.
+          </p>
+        </div>
+        <div class="inside-container example-sentences">
+          <p class="context">
+            The green belts <em>project</em> is a <em>project</em> designed to
+            protect and improve environmental conditions, as well as a
+            sustainable development <em>project</em>.
+          </p>
+          <p class="context">
+            <em>Проект</em> создания зеленых поясов является <em>проектом</em>,
+            предназначенным для защиты и улучшения экологических условий, а
+            также <em>проектом</em> по устойчивому развитию.
+          </p>
+        </div>
+        <div class="inside-container example-sentences">
+          <p class="context">
+            At the <em>project</em> level, <em>project</em> approval committees
+            and <em>project</em> boards provide quality assurance and oversight.
+          </p>
+          <p class="context">
+            На уровне <em>проектов</em> качество и надзор обеспечивают Комитет
+            по утверждению <em>проектов</em> и советы по <em>проектам</em>.
+          </p>
+        </div>
+        <div class="inside-container example-sentences">
+          <p class="context">
+            You have been distracted and you have buried yourself in
+            <em>project</em> after <em>project</em> ever since Christmas.
+          </p>
+          <p class="context">
+            Ты как безумная берёшь <em>проект</em> за <em>проектом</em> с самого
+            Рождества.
+          </p>
+        </div>
+        <div class="inside-container example-sentences">
+          <p class="context">
+            Exchange of experience in dissemination of information about the
+            <em>project</em> and collecting feedback from different
+            <em>project</em> target groups.
+          </p>
+          <p class="context">
+            Состоялся обмен опытом относительно распространения информации о
+            <em>проекте</em> и изучении уровня осведомленности и отзыв различных
+            целевых групп о <em>проекте</em>.
+          </p>
+        </div>
+        <div class="inside-container example-sentences">
+          <p class="context">
+            The <em>project</em> has three major components:
+            institution-building and strengthening; rural finance for
+            microenterprise activities; and <em>project</em> management.
+          </p>
+          <p class="context">
+            Этот <em>проект</em> состоит из трех основных компонентов:
+            организационное строительство и укрепление организационных структур;
+            сельское финансирование деятельности микропредприятий; и управление
+            <em>проектами</em>.
+          </p>
+        </div>
+        <div class="inside-container example-sentences">
+          <p class="context">
+            All <em>project</em> proposals, as well as requests for
+            <em>project</em> preparation funding, submitted for approval need
+            Government endorsement from the given operational focal point.
+          </p>
+          <p class="context">
+            Все предложения по <em>проектам</em>, а также просьбы о
+            финансировании деятельности по подготовке <em>проектов</em>,
+            представляемые для утверждения и поступающие от данного оперативного
+            координационного центра, должны быть одобрены правительствами.
+          </p>
+        </div>
+        <div class="inside-container example-sentences">
+          <p class="context">
+            Completion of the rebranding <em>project</em> is scheduled for early
+            December, after which the <em>project</em> will acquire a new image.
+          </p>
+          <p class="context">
+            <em>Проект</em> по ребрендингу планируется завершить к началу
+            декабря, после чего <em>проект</em> обретёт свой новый имидж.
+          </p>
+        </div>
+        <div class="btn-container example-btn-container">
+          <button class="prev-content-btn" onclick="changeExampleSentence(-1)">
+            <
+          </button>
+          <button class="next-content-btn" onclick="changeExampleSentence(1)">
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <p class="credit">
+      Made by <span class="credit-najmiddin">timy_16</span> &
+      <span class="credit-kamilla">cvmllv</span>
+    </p>
+    <script>
+      // Pronounciation
+      function pronounce() {
+        const audio = new Audio();
+        audio.src =
+          "https://en-audio.howtopronounce.com/15754278815de71f298a22c.mp3";
+        audio.play();
+      }
+      function showMore() {
+        const showMoreBtn = document.querySelector(".more-translation-btn");
+        const translationBlock = document.querySelector(
+          ".inside-container-translation"
+        );
+        translationBlock.classList.toggle("show-more");
+        if (showMoreBtn.innerHTML === "Show More") {
+          showMoreBtn.innerHTML = "Show Less";
+        } else {
+          showMoreBtn.innerHTML = "Show More";
+        }
+      }
+      let slideIndex = 1;
+      let slides = document.getElementsByClassName("slide-img");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+      function changeSlide(n) {
+        let slides = document.getElementsByClassName("slide-img");
+        if (n == 1 && slideIndex == slides.length) {
+          slideIndex = 1;
+        } else if (n == -1 && slideIndex == 1) {
+          slideIndex = slides.length;
+        } else {
+          slideIndex += n;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+
+      // Example sentences change
+      let sentenceIndex = 1;
+      let sentences = document.getElementsByClassName("example-sentences");
+      for (i = 0; i < sentences.length; i++) {
+        sentences[i].style.display = "none";
+      }
+      sentences[sentenceIndex - 1].style.display = "block";
+      function changeExampleSentence(n) {
+        let sentences = document.getElementsByClassName("example-sentences");
+        if (n == 1 && sentenceIndex == sentences.length) {
+          sentenceIndex = 1;
+        } else if (n == -1 && sentenceIndex == 1) {
+          sentenceIndex = sentences.length;
+        } else {
+          sentenceIndex += n;
+        }
+        for (i = 0; i < sentences.length; i++) {
+          sentences[i].style.display = "none";
+        }
+        sentences[sentenceIndex - 1].style.display = "block";
+      }
+
+      // YouTube videos change
+      function changeYouTubeVideo(n) {
+        let youtubeVideoSrc = [
+          "https://youtube.com/embed/YUOJFB6ZGQQ?start=55&end=71&cc_load_policy=1&cc_lang_pref=en&rel=0",
+          "https://youtube.com/embed/sE4-req-Hes?start=485&end=501&cc_load_policy=1&cc_lang_pref=en&rel=0",
+          "https://youtube.com/embed/oRxpwFfWD2c?start=192&end=208&cc_load_policy=1&cc_lang_pref=en&rel=0",
+          "https://youtube.com/embed/td7Dcsco-WY?start=169&end=185&cc_load_policy=1&cc_lang_pref=en&rel=0",
+          "https://youtube.com/embed/td7Dcsco-WY?start=200&end=216&cc_load_policy=1&cc_lang_pref=en&rel=0",
+          "https://youtube.com/embed/td7Dcsco-WY?start=770&end=786&cc_load_policy=1&cc_lang_pref=en&rel=0",
+          "https://youtube.com/embed/mm5xNEEWOZo?start=27&end=43&cc_load_policy=1&cc_lang_pref=en&rel=0",
+          "https://youtube.com/embed/L3QkaS249Bc?start=779&end=795&cc_load_policy=1&cc_lang_pref=en&rel=0",
+          "https://youtube.com/embed/KcySTW2rc0o?start=124&end=140&cc_load_policy=1&cc_lang_pref=en&rel=0",
+          "https://youtube.com/embed/fvzpoTpfj3g?start=469&end=485&cc_load_policy=1&cc_lang_pref=en&rel=0",
+        ];
+        let currentVideo = document.querySelector(".youtube-video");
+        let currentVideoSrc = document
+          .querySelector(".youtube-video")
+          .getAttribute("src");
+        let youtubeIndex = 1;
+        for (i = 0; i < youtubeVideoSrc.length; i++) {
+          if (currentVideoSrc == youtubeVideoSrc[i]) {
+            youtubeIndex = i + 1;
+          }
+        }
+        if (n == 1 && youtubeIndex == youtubeVideoSrc.length) {
+          youtubeIndex = 1;
+        } else if (n == -1 && youtubeIndex == 1) {
+          youtubeIndex = youtubeVideoSrc.length;
+        } else {
+          youtubeIndex += n;
+        }
+        currentVideo.src = youtubeVideoSrc[youtubeIndex - 1];
+      }
+    </script>
+  </body>
+</html>
